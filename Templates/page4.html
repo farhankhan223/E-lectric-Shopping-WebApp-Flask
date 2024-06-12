@@ -1,0 +1,102 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+
+    <div class="search-container">
+    <form action="/samsung" method="GET">
+        <input type="text" placeholder="Search..." name="q">
+        <button type="submit">Search</button>
+    </form>
+</div>
+<style>
+    .search-container {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .search-container form {
+        display: inline-block;
+    }
+
+    .search-container input[type="text"] {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .search-container button[type="submit"] {
+        padding: 12px 20px;
+        font-size: 18px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+</style>
+
+
+
+
+
+
+
+
+<title>CSS Website Layout</title> 
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" href="{{url_for('static', filename='../static/page4.css')}}">
+</head> 
+<body bgcolor="#300202"> 
+
+<div class="topnav"> 
+    <a href="/login">Log In</a> 
+    <a href="/registration">Sign Up</a> 
+    <a href="/login2">Admin</a> 
+    
+</div>
+
+<div class="header">
+    <h1>E-lectric</h1> 
+    <p>Your Complete Electronics Shop</p> 
+</div>
+<div class="row">
+    <div class="column">
+        <h2>Mobiles</h2>
+        <a href="/samsung">
+            <img src="https://www.reliancedigital.in/wp-content/uploads/2023/03/Vivo_V27_Pro_2.jpg" alt="Samsung">
+        </a>
+        <ul>
+            <a href="/samsung"><li>Samsung</li></a>
+            <a href="/iphone"><li>Iphones</li></a>
+            <a href="/xiaomi"><li>Xiaomi</li></a>
+        </ul>
+    </div>
+    <div class="column">
+        <h2>Laptop</h2>
+        <a href="/asus">
+            <img src="https://assets.mspimages.in/gear/wp-content/uploads/2021/08/Windows-10-laptop-1.jpg" alt="Asus">
+        </a>
+        <ul>
+            <a href="/asus"><li>Asus</li></a>
+            <a href="/hp"><li>HP</li></a>
+            <a href="/dell"><li>Dell</li></a>
+        </ul>
+    </div>
+    <div class="column">
+        <h2>Accessories</h2>
+        <a href="/usbcable">
+            <img src="https://cdn.thewirecutter.com/wp-content/media/2021/07/magsafeaccessories-2048px-4358edit-2x1-1.jpg?auto=webp&quality=75&crop=1.91:1&width=1200" alt="Asus">
+            
+        </a>
+        <ul>
+            <a href="/usbcable"><li>USB Cable</li></a>
+            <a href="/laptopbags"><li>Laptop Bags</li></a>
+            <a href="/charger"><li>Charger</li></a>
+        </ul>
+    </div>
+</div>
+
+
+
+
+</body> 
+</html>
