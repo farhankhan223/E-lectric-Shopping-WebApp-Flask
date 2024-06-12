@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Page</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='../static/button.css')}}">
+
+
+    </style>
+</head>
+<body>
+
+
+    <div class="product">
+        <img src="https://m.media-amazon.com/images/I/41uPO8-PWqL._SX300_SY300_QL70_FMwebp_.jpg">
+        <h2>DELL 3530</h2>
+        <p>Dell Vostro 3530 Laptop, Intel i5-1335U/8GB/512GB SSD/15.6" (39.62cm) FHD AG 120Hz 250 nits Narrow Border/Win11+MSO'21/15 Month McAfee/Carbon Black/1.66kg/Backlit KB/4 GB GDDR6/Win 11 + MSO'21/15 Months</p>
+        <p><strong>Price: 55000</strong></p>
+        <button onclick="addToCart('Dell Vostro 3530 Laptop', 55000)">Add to Cart</button>
+        
+    </div>
+
+    <div class="product">
+        <img src="https://m.media-amazon.com/images/I/3127OeIPwtL._SX300_SY300_QL70_FMwebp_.jpg">
+        <h2>DELL G15</h2>
+        <p>Dell G15 5520 Gaming Laptop, Intel i5-12500H/16GB DDR5/1TB SSD/15.6" (39.62cm) FHD WVA AG 120Hz 250 nits/NVIDIA RTX 3050, 4 GB GDDR6/Win 11 + MSO'21/15 Months McAfee/Backlit KB/Dark Shadow Grey/2.81kg</p>
+        <p><strong>Price: 60000</strong></p>
+        <button onclick="addToCart('Dell G15 5520 Gaming Laptop', 60000)">Add to Cart</button>
+    </div>
+
+     <div class="product">
+        <img src="https://m.media-amazon.com/images/I/416w5-NmTCL._SX300_SY300_QL70_FMwebp_.jpg">
+        <h2>DELL 7430</h2>
+        <p>Dell Inspiron 7430 2in1 Touch Laptop, Intel Core i5-1335U Processor/16GB LP DDR5/1TB SSD/14.0" (35.56cm) FHD+ with Comfort View/Active Pen/Win 11 + MSO'21/15 Month McAfee/Platinum Silver/1.58kg</p>
+        <p><strong>Price: 70000</strong></p>
+        <button onclick="addToCart('Dell Inspiron 7430 ', 70000)">Add to Cart</button>
+    </div><br>
+
+    <!-- You can add more product divs here if you have multiple products -->
+<a href = "/">Back To Home Page</a>
+
+<script>
+    // Initialize an empty cart
+    let cart = [];
+
+    // Function to add a product to the cart
+    function addToCart(productName, price) {
+        cart.push({ name: productName, price: price });
+        alert(productName + " has been added to your cart!");
+    }
+</script>
+
+</body>
+
+
+</html>
