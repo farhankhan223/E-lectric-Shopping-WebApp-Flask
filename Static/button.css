@@ -1,0 +1,32 @@
+.product {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    margin: 20px;
+    display: inline-block;
+}
+.product img {
+    max-width: 100%;
+}
+.product button {
+    background-color: #4a1111;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+a[href="/"] {
+background-color: #4a1111;
+color: #fff;
+padding: 10px 20px;
+text-decoration: none;
+margin: 10px;
+display: inline-block;
+border: none;
+cursor: pointer;
+
+}
+
+
+
