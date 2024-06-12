@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Page</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='../static/button.css')}}">
+</head>
+<body>
+
+
+    <div class="product">
+        <img src="https://m.media-amazon.com/images/I/410uUHMbLlL._SX300_SY300_QL70_FMwebp_.jpg">
+        <h2>HP 15S</h2>
+        <p>HP Laptop 15s, AMD Ryzen 7 5700U, 15.6-inch (39.6 cm), FHD, 16GB DDR4, 512GB SSD, AMD Radeon Graphics, Backlit KB, Thin & Light, Dual Speakers (Win 11, MSO 2021, Silver, 1.69 kg), ey2001AU</p>
+        <p><strong>Price: 50000</strong></p>
+        <button onclick="addToCart(' HP Laptop 15s ',50000)">Add to Cart</button>
+        
+    </div>
+
+    <div class="product">
+        <img src="https://m.media-amazon.com/images/I/41JcEhfElJL._SX300_SY300_QL70_FMwebp_.jpg">
+        <h2>HP 15</h2>
+        <p>HP Laptop 15s, AMD Ryzen 3 5300U, 15.6-inch (39.6 cm), FHD, 8GB DDR4, 512GB SSD, AMD Radeon Graphics, Thin & Light, Dual Speakers (Win 11, MSO 2019, Silver, 1.69 kg), eq2143AU</p>
+        <p><strong>Price: 60000</strong></p>
+        <button onclick="addToCart(' HP Laptop 15s, AMD Ryzen 3 ',60000)">Add to Cart</button>
+    </div>
+
+     <div class="product">
+        <img src="https://m.media-amazon.com/images/I/415zArrvm9L._SX300_SY300_QL70_FMwebp_.jpg">
+        <h2>Asus 19</h2>
+        <p>HP Victus Gaming Laptop, 12th Gen Intel Core i5-12450H, NVIDIA RTX 3050 GPU, 15.6-inch (39.6 cm), FHD, IPS, 144Hz, 9 ms Response time, 16GB DDR4, 512GB SSD, Backlit KB (MSO, Blue, 2.29 kg) fa0666TX</p>
+        <p><strong>Price: 70000</strong></p>
+        <button onclick="addToCart(' HP Victus Gaming Laptop ',70000)">Add to Cart</button>
+    </div><br>
+
+    <!-- You can add more product divs here if you have multiple products -->
+<a href = "/">Back To Home Page</a>
+<script>
+    // Initialize an empty cart
+    let cart = [];
+
+    // Function to add a product to the cart
+    function addToCart(productName, price) {
+        cart.push({ name: productName, price: price });
+        alert(productName + " has been added to your cart!");
+    }
+</script>
+
+</body>
+
+
+</html>
