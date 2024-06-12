@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Page</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='../static/button.css')}}">
+</head>
+<body>
+
+
+    <div class="product">
+        <img src="https://m.media-amazon.com/images/I/61VuVU94RnL._SX679_.jpg" alt="Product Image">
+        <h2>Iphone 13</h2>
+        <p>Apple iPhone 13 (128GB) - Midnight</p>
+        <p><strong>Price: 1,50,000</strong></p>
+        <button onclick="addToCart('Apple iPhone 13 (128GB),1,50,000 ')">Add to Cart</button>
+        
+    </div>
+
+    <div class="product">
+        <img src="https://m.media-amazon.com/images/I/61cwywLZR-L._SX679_.jpg" alt="Product Image">
+        <h2>Iphone 14</h2>
+        <p>Apple iPhone 14 (128 GB) - Midnight</p>
+        <p><strong>Price: 1,60,000</strong></p>
+        <button onclick="addToCart('Apple iPhone 14 (128 GB) ,1,60,000 ')">Add to Cart</button>
+    </div>
+
+     <div class="product">
+        <img src="https://m.media-amazon.com/images/I/31KxpX7Xk7L._SY445_SX342_QL70_FMwebp_.jpg" alt="Product Image">
+        <h2>Iphone 15</h2>
+        <p>Apple iPhone 15 (128 GB) - Midnight</p>
+        <p><strong>Price:200000</strong></p>
+        <button onclick="addToCart('Apple iPhone 15 (128 GB) ,200000 ')">Add to Cart</button>
+        
+    </div><br>
+
+    <!-- You can add more product divs here if you have multiple products -->
+<a href = "/">Back To Home Page</a>
+
+<script>
+    // Initialize an empty cart
+    let cart = [];
+
+    // Function to add a product to the cart
+    function addToCart(productName, price) {
+        cart.push({ name: productName, price: price });
+        alert(productName + " has been added to your cart!");
+    }
+</script>
+
+</body>
+
+
+</html>
