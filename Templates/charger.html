@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Page</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='../static/button.css')}}">
+
+    
+</head>
+<body>
+
+
+    <div class="product">
+        <img src="https://m.media-amazon.com/images/I/31SCmQPqr4L._AC_UY218_.jpg">
+        <h2>Blackwik</h2>
+        <p>Blackwik 65W Fast Warp Dash Charger Adapter with Type C Dash Fast Charging Cable for Oneplus Mobiles Compatible with 11/11R/10/9/9T/9R/Nord/8/8 Pro/7 USB Charger Wall Plug Charging </p>
+        <p><strong>Price: 2500</strong></p>
+        <button onclick="addToCart('Blackwik 65W Fast Warp Dash Charger', 2500)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="https://m.media-amazon.com/images/I/71TxEkvzzGL._AC_UY218_.jpg">
+        <h2>NEWHEY</h2>
+        <p>12 Pieces Dual Port USB Wall Charger USB Charger Adapter Quick Charger Cube 2.1A USB Charger Wall Plug Charging Block Replacement for Most Smartphones and Tablets (Black)</p>
+        <p><strong>Price: 4999</strong></p>
+        <button onclick="addToCart('Dual Port USB Wall Charger', 4999)">Add to Cart</button>
+        
+    </div>
+
+     <div class="product">
+        <img src="https://m.media-amazon.com/images/I/51dqZ6TvxUL._AC_UY218_.jpg">
+        <h2>RAVIAD</h2>
+        <p>RAVIAD Nothing Original 35W Rapid Fast Type C Mobile Phone Charger Adapter Compatible with Nothing Phone 2, Phone 1 [PD PPS Technology] Support 35 Watt Power Power Delivery Charger Adaptor White</p>
+        <p><strong>Price: 1499</strong></p>
+        <button onclick="addToCart('RAVIAD Nothing Original 35W Rapid Fast Type', 1499)">Add to Cart</button>
+        
+    </div><br>
+
+    <!-- You can add more product divs here if you have multiple products -->
+<a href = "/">Back To Home Page</a>
+
+<script>
+    // Initialize an empty cart
+    let cart = [];
+
+    // Function to add a product to the cart
+    function addToCart(productName, price) {
+        cart.push({ name: productName, price: price });
+        alert(productName + " has been added to your cart!");
+    }
+</script>
+
+
+
+</body>
+</html>
