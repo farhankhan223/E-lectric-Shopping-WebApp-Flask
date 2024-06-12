@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Page</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='../static/button.css')}}">
+
+    </style>
+</head>
+<body>
+
+
+    <div class="product">
+        <img src="https://m.media-amazon.com/images/I/31UhwG+XTJL._SY300_SX300_.jpg" alt="Product Image">
+        <h2>Xiaomi 12 Pro</h2>
+        <p>Xiaomi 12 Pro | 5G (Noir Black, 12GB RAM, 256GB Storage) | Snapdragon 8 Gen 1 | 50+50+50MP Flagship Cameras (OIS) | 10bit 2K+ Curved AMOLED Display</p>
+        <p><strong>Price: 30000</strong></p>
+        <button onclick="addToCart('Xiaomi 12 Pro ,30000')">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="https://m.media-amazon.com/images/I/61RvCwjI7dL._AC_UY300_.jpg" alt="Product Image">
+        <h2>Xiaomi 13</h2>
+        <p>Xiaomi 13 Pro | 5G (Noir Black, 8GB RAM, 256GB Storage) | Snapdragon 8 Gen 1 | 50+50+50MP Flagship Cameras (OIS) | 10bit 2K+ Curved AMOLED Display</p>
+        <p><strong>Price: 40000</strong></p>
+        <button onclick="addToCart('Xiaomi 13 Pro,40000')">Add to Cart</button>
+    </div>
+
+     <div class="product">
+        <img src="https://m.media-amazon.com/images/I/41fITfJ3uPL._SX300_SY300_QL70_FMwebp_.jpg" alt="Product Image">
+        <h2>Xiaomi 10</h2>
+        <p>Xiaomi 13 Pro (Ceramic Black, 12GB RAM 256GB Storage) | Leica Professional 50MP Triple Camera | Biggest Camera Sensor 1" IMX989 | SD 8 Gen 2</p>
+        <p><strong>Price: 20000</strong></p>
+        <button onclick="addToCart('Xiaomi 13 Pro Ceramic Black,20000')">Add to Cart</button>
+    </div>
+        
+    </div><br>
+
+    <!-- You can add more product divs here if you have multiple products -->
+<a href = "/">Back To Home Page</a>
+
+
+<script>
+    // Initialize an empty cart
+    let cart = [];
+
+    // Function to add a product to the cart
+    function addToCart(productName, price) {
+        cart.push({ name: productName, price: price });
+        alert(productName + " has been added to your cart!");
+    }
+</script>
+
+
+</body>
+
+
+</html>
