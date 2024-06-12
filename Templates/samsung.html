@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Page</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='../static/button.css')}}">
+        
+</head>
+<body>
+    
+
+
+    <div class="product">
+        <img src="https://m.media-amazon.com/images/I/91ItZJh1FDL._SX679_.jpg" alt="Product Image">
+        <h2>Samsung M34</h2>
+        <p>Samsung Galaxy A34 5G (Awesome Graphite, 8GB, 256GB Storage) | 50 MP No Shake Cam (OIS) | IP67 | Gorilla Glass 5 | Voice Focus </p>
+        <p><strong>Price:20000</strong></p>
+        <button onclick="addToCart('Samsung Galaxy A34 5G', 20000)">Add to Cart</button>
+        
+        
+    </div>
+
+    <div class="product">
+        <img src="https://m.media-amazon.com/images/I/41rxSxVXs7L._SX300_SY300_QL70_FMwebp_.jpg" alt="Product Image">
+        <h2>Samsung Galaxy M04</h2>
+        <p>Samsung Galaxy M04 5G (Smoky Teal,4GB,128GB)|50MP Triple Cam|Segment's Only 6000 mAh 5G SP</p>
+        <p><strong>Price: 10000</strong></p>
+        <button onclick="addToCart('Samsung Galaxy M04 5G',10000)">Add to Cart</button>
+    </div>
+
+     <div class="product">
+        <img src="https://m.media-amazon.com/images/I/71DjLEgCUYL._AC_UY300_.jpg" alt="Product Image">
+        <h2>Samsung A54</h2>
+        <p>Samsung Galaxy S22 Ultra 5G (Phantom Black, 12GB, 256GB Storage) with No Cost EMI/Additional Exchange Offers</p>
+        <p><strong>Price: 30000</strong></p>
+        <button onclick="addToCart('Galaxy S22 Ultra 5G',30000)">Add to Cart</button>
+
+    </div><br>
+
+    <!-- You can add more product divs here if you have multiple products -->
+<a href = "/">Back To Home Page</a>
+
+<script>
+   
+    let cart = [];
+
+    // Function to add a product to the cart
+    function addToCart(productName, price) {
+        cart.push({ name: productName, price: price });
+        alert(productName + " has been added to your cart!");
+    }
+</script>
+
+
+
+
+</body>
+</html>
