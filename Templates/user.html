@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flask Adv : Users List</title>
+	<link rel="stylesheet" href="{{url_for('static', filename='../static/user.css')}}">
+</head>
+<body>
+	<div align = "center">
+		<fieldset>
+			<h1>Welcome To Users List</h1>
+			<table border = "5px" cellspacing="10">
+				<thead>
+					<th>ID</th>
+					<th>Name</th>
+					<th>Email Id</th>
+					<th>Address</th>
+					<th>Password</th>
+				</thead>
+
+				{% for u in ulist %}
+				<tr>
+					<td>{{u[0]}}</td>
+					<td>{{u[1]}}</td>
+					<td>{{u[2]}}</td>
+					<td>{{u[3]}}</td>
+					<td>{{u[4]}}</td>
+				</tr>
+
+				{% endfor %}
+
+				
+			</table>
+
+		</fieldset>
+
+
+
+	</div>
+</body>
+</html>
